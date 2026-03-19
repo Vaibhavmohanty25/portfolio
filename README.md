@@ -1,4 +1,4 @@
-# 🌌 Vaibhav Mohanty — Solar System Portfolio
+# 🌌 Vaibhav Mohanty —  Portfolio
 
 An immersive, interactive portfolio experience built as a **living solar system**. Navigate through orbiting planets to explore projects, skills, hobbies, and more.
 
