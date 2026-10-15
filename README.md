@@ -1,70 +1,58 @@
-# 🌌 Vaibhav Mohanty —  Portfolio
+# Vaibhav Mohanty — AI/ML Portfolio
 
-An immersive, interactive portfolio experience built as a **living solar system**. Navigate through orbiting planets to explore projects, skills, hobbies, and more.
+**Live portfolio:** https://vaibhavmohanty-portfolio.vercel.app
 
-🔗 **[View Live →](https://vaibhavmohanty25.github.io/portfolio/)**
+An original, interactive Acidwave portfolio containing 12 projects, including PRISM, ClaimPilot, Saarthi, and JARVIS.
 
----
+## What's included
 
-## 🚀 Features
+- Responsive neon and chrome design, project filters, and 12 mission briefings with direct GitHub links.
+- Editable player identity, XP, five ranks, ten achievements, daily streaks, and saved exploration progress.
+- Eight collectible Acid Drops, a secret track, a Catch the Acid canvas game, a local high score, and a completion certificate.
+- Terminal commands, command history, four accent themes, and opt-in procedural audio.
+- Keyboard navigation, native accessible dialogs, visible focus, reduced-motion support, and a Reduce Effects toggle.
+- Recruiter shortcuts to the résumé, GitHub, LinkedIn, and contact email.
 
-- **3D Solar System** — Fully interactive scene built with [Three.js](https://threejs.org/)
-- **Planet Navigation** — Hover & click planets to explore different sections
-- **Glassmorphism UI** — Modern frosted-glass panels with smooth transitions
-- **Cosmic Animations** — Orbiting planets, glowing sun, twinkling stars
-- **Loading Screen** — Cinematic entry with animated ring loader
-- **Mobile Responsive** — Fallback layout for smaller screens
-- **Contact Form** — Integrated contact panel in the Sun ☀️
+Featured projects: PRISM, ClaimPilot, Saarthi, and JARVIS. The workbench also includes Content Intelligence Engine, StockSenseAI, MY_LLM, mini-blogger, University Management System, FaceSense, CIVITAS, and Deadlock Detection System.
 
-## 🪐 Sections (Planets)
+## Run locally
 
-| Planet | Section |
-|--------|---------|
-| 🌍 Earth | Projects Overview |
-| 🔴 Mars | University Management System |
-| 🟣 Neptune | FaceSense (AI Facial Recognition) |
-| 🟢 Jupiter | Mini Blogger |
-| 🟠 Saturn | Civitas Disaster System |
-| 🏃 Mercury | Running (Hobby) |
-| 🏊 Venus | Swimming (Hobby) |
-| 🛠 Uranus | Skills & Tech Stack |
-| 👨‍💻 Pluto | About Me |
-| ☀️ Sun | Contact Me |
+Open `index.html` in a browser, or serve this folder with any static web server. No installation or build step is required. Tailwind and Google Fonts load through their CDNs; the core layout also has inline CSS.
 
-## 🛠 Tech Stack
+## Customize
 
-- **HTML5** — Semantic structure
-- **CSS3** — Custom properties, animations, glassmorphism
-- **JavaScript** — Vanilla JS for all interactivity
-- **Three.js** — 3D rendering & scene management
-- **Google Fonts** — Outfit & Space Grotesk
+Edit `index.html` in Cursor. Search for `PROJECTS` to change project content, `XP` to tune rewards, `BADGES` to edit achievements, and `EDIT ME` for theme settings.
 
-## 📂 Project Structure
+## Interactions
 
-```
-portfolio/
-├── index.html    # Main HTML with all panel content
-├── style.css     # Styles, animations & responsive design
-├── script.js     # Three.js scene, interactions & navigation
-└── README.md
-```
+- Progress and local high scores stay in the visitor's browser, with a memory fallback when storage is unavailable.
+- Sound starts off and can be enabled explicitly.
+- System reduced-motion preferences and the Reduce Effects control simplify animation.
+- The contact form opens an email draft. It does not send messages or collect submissions on a server.
 
-## 🏗 Run Locally
+## Deploy
 
-Simply open `index.html` in your browser — no build step required!
+The production Vercel project is `acidwave-portfolio`, using the personalized domain above. Push updates to `master` to deploy automatically after the repository connection is configured. It uses static hosting with no framework, build command, or environment variables.
+
+GitHub Pages also serves the repository root from `master`: https://vaibhavmohanty25.github.io/portfolio/
+
+## Verification
+
+With Node.js installed, run these commands from the repository root:
 
 ```bash
-# Or use a local server
-npx serve .
+node scripts/check.cjs
+node scripts/verify.cjs
 ```
 
-## 👤 Author
+These checks cover JavaScript syntax, unique HTML IDs, section anchors, safe storage fallbacks, XP deduplication, game scoring and pause behavior, and certificate unlocks.
 
-**Vaibhav Mohanty** — B.Tech CSE Student
+## Files
 
-- [GitHub](https://github.com/Vaibhavmohanty25)
-- [LinkedIn](https://www.linkedin.com/in/vaibhav-mohanty25/)
+- `index.html`: complete application, styles, project data, and interactions.
+- `vercel.json`: static deployment configuration.
+- `.nojekyll`: direct static serving on GitHub Pages.
+- `scripts/`: checks requiring no third-party packages.
+- `resume.pdf`: the repository's downloadable résumé.
 
----
-
-<p align="center">Built with ❤️ and a love for the cosmos</p>
+GitHub: https://github.com/Vaibhavmohanty25/portfolio
