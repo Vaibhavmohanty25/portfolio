@@ -32,7 +32,7 @@ Edit `index.html` in Cursor. Search for `PROJECTS` to change project content, `X
 
 ## Deploy
 
-The production Vercel project is `acidwave-portfolio`, using the personalized domain above. Push updates to `master` to deploy automatically after the repository connection is configured. It uses static hosting with no framework, build command, or environment variables.
+This repository is connected to the production Vercel project `acidwave-portfolio`, using the personalized domain above. Push updates to `master` to deploy automatically. It uses static hosting with no framework, build command, or environment variables.
 
 GitHub Pages also serves the repository root from `master`: https://vaibhavmohanty25.github.io/portfolio/
 
