@@ -1,0 +1,4 @@
+:HL["./_next/static/css/91cdb0df8645e00e.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap","style"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"2UhSqOdV9bsRn7pOUjl3t","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

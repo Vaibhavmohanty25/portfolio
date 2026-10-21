@@ -1,58 +1,52 @@
-# Vaibhav Mohanty — AI/ML Portfolio
+# Vaibhav Mohanty — Acidwave Portfolio
 
-**Live portfolio:** https://vaibhavmohanty-portfolio.vercel.app
+An interactive AI/ML portfolio with black and cosmic violet surfaces, acid green,
+neon pink, cyan and yellow accents, stretched Syne typography, distorted SVG waves,
+chrome artwork, halftone, grain, scanlines, and a moving rave ticker.
 
-An original, interactive Acidwave portfolio containing 12 projects, including PRISM, ClaimPilot, Saarthi, and JARVIS.
+## Live sites
 
-## What's included
+- https://vaibhavmohanty-portfolio.vercel.app
+- https://vaibhavmohanty25.github.io/portfolio/
 
-- Responsive neon and chrome design, project filters, and 12 mission briefings with direct GitHub links.
-- Editable player identity, XP, five ranks, ten achievements, daily streaks, and saved exploration progress.
-- Eight collectible Acid Drops, a secret track, a Catch the Acid canvas game, a local high score, and a completion certificate.
-- Terminal commands, command history, four accent themes, and opt-in procedural audio.
-- Keyboard navigation, native accessible dialogs, visible focus, reduced-motion support, and a Reduce Effects toggle.
-- Recruiter shortcuts to the résumé, GitHub, LinkedIn, and contact email.
+## Explore
 
-Featured projects: PRISM, ClaimPilot, Saarthi, and JARVIS. The workbench also includes Content Intelligence Engine, StockSenseAI, MY_LLM, mini-blogger, University Management System, FaceSense, CIVITAS, and Deadlock Detection System.
+- Preview four featured systems and open their project briefings.
+- Explore twelve projects, including PRISM, ClaimPilot, Saarthi, and JARVIS.
+- Filter the additional projects and follow their GitHub links.
+- Play Signal Lab to match four tasks to the appropriate AI projects.
+- Change the accent with four live color swatches.
+- Use Reduce Effects or the operating system's reduced-motion preference.
 
-## Run locally
+The hero reads **Vaibhav Mohanty**, with no decorative asterisk. Exploration and
+game progress last for the current visit. Contact opens an email draft; no form
+data is sent to a server. The previous static implementation is available in Git history.
 
-Open `index.html` in a browser, or serve this folder with any static web server. No installation or build step is required. Tailwind and Google Fonts load through their CDNs; the core layout also has inline CSS.
+## Edit and run
 
-## Customize
+Use Node.js 22.18 or newer.
 
-Edit `index.html` in Cursor. Search for `PROJECTS` to change project content, `XP` to tune rewards, `BADGES` to edit achievements, and `EDIT ME` for theme settings.
-
-## Interactions
-
-- Progress and local high scores stay in the visitor's browser, with a memory fallback when storage is unavailable.
-- Sound starts off and can be enabled explicitly.
-- System reduced-motion preferences and the Reduce Effects control simplify animation.
-- The contact form opens an email draft. It does not send messages or collect submissions on a server.
-
-## Deploy
-
-This repository is connected to the production Vercel project `acidwave-portfolio`, using the personalized domain above. Push updates to `master` to deploy automatically. It uses static hosting with no framework, build command, or environment variables.
-
-GitHub Pages also serves the repository root from `master`: https://vaibhavmohanty25.github.io/portfolio/
-
-## Verification
-
-With Node.js installed, run these commands from the repository root:
-
-```bash
-node scripts/check.cjs
-node scripts/verify.cjs
+```sh
+npm ci
+npm run dev
 ```
 
-These checks cover JavaScript syntax, unique HTML IDs, section anchors, safe storage fallbacks, XP deduplication, game scoring and pause behavior, and certificate unlocks.
+Open http://localhost:3000. Update profile details and projects in
+`src/data/portfolio.ts`, typography and colors in `src/app/acidwave.css`,
+and game tasks in `src/lib/signal-game.ts`.
 
-## Files
+```sh
+npm test
+npm run typecheck
+npm run build
+```
 
-- `index.html`: complete application, styles, project data, and interactions.
-- `vercel.json`: static deployment configuration.
-- `.nojekyll`: direct static serving on GitHub Pages.
-- `scripts/`: checks requiring no third-party packages.
-- `resume.pdf`: the repository's downloadable résumé.
+The build creates a static export in `out/`. No Node server is needed for hosting.
+The checked-in root `index.html`, `_next/` assets, and supporting exported files
+are the published snapshot, so the existing static Vercel and GitHub Pages
+configuration continues to work. After changing source, run `npm run build`,
+copy the contents of `out/` to the repository root, and commit the updated
+source and static snapshot together. Keep `.nojekyll` so Pages serves `_next/`.
 
-GitHub: https://github.com/Vaibhavmohanty25/portfolio
+The original `resume.pdf` is retained. `scripts/check.cjs` validates the exported
+HTML and assets; `scripts/verify.cjs` runs the Signal Lab behavior tests.
